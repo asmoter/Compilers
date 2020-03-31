@@ -59,8 +59,12 @@ def t_INTNUM(t):
     return t
 
 
+# def t_STRING(t):
+#     r'("[a-zA-Z ]*")'
+#     return t
+
 def t_STRING(t):
-    r'("[a-zA-Z ]*")'
+    r'\"[^\"]*\"'
     return t
 
 
